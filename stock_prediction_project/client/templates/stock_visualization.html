@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+    
+    <script src="/static/js/stock_visualisation.js"></script>
+    <link rel="stylesheet" href="/static/css/stock_visualization.css">
+</head>
+
+<body>
+    <header>
+        <div id="particles"></div>
+        <h1>Stock Visualisation</h1>
+    
+
+    <main>
+        <div class="content-container">
+            <aside class="news-box">
+                <h2>Stocks in News</h2>
+                <ul id="stock-news-list">
+                    <li><a href="#">AAPL - Apple Inc.</a></li>
+                    <li><a href="#">TSLA - Tesla Inc.</a></li>
+                    <li><a href="#">AMZN - Amazon.com Inc.</a></li>
+                    <li><a href="#">GOOGL - Alphabet Inc.</a></li>
+                    <li><a href="#">MSFT - Microsoft Corp.</a></li>
+                    <!-- More stocks can be added here -->
+                </ul>
+            </aside>
+
+            <section class="main-content">
+
+                <label for="company_name_1">Enter name of company:</label>
+                <input type="text" id="company_name_1" name="company_name_1" placeholder="e.g. Apple Inc." required>
+                <button id="submit_single_company" type="submit">Submit</button>
+
+
+                <div id="graph">
+                    <div class="tradingview-widget-container">
+                        <div class="tradingview-widget-container__widget"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</header>
+
+</body>
+
+</html>
+
+
+
+<!-- <h1>Stock Visualisation</h1>
+
+    <label for="company_name_1">Enter name of company</label>
+    <input type="text" id="company_name_1" name="company_name_1">
+
+    <button id = "submit_single_company">Submit</button>
+
+
+    <div id="graph" style="height: 30lh; width: 50lh;">
+        <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+        </div>
+    </div> -->

@@ -1,0 +1,234 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    display: flex;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+
+/* Background container */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(74, 74, 74, 0.695), rgba(36, 36, 36, 0.695)), url(/static/assets/images/paperbackground.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(0.5px);
+    /* Blurs only the background */
+    z-index: -1;
+}
+
+/* Main content container */
+#container {
+    width: 100%;
+    display: flex;
+    z-index: 1;
+    /* Keeps the content above the background */
+}
+
+/* Sidebar for conversation history */
+#history-panel {
+    width: 250px;
+    background-color: #172021;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.518);
+    background: linear-gradient(rgb(34, 139, 110), rgb(0, 36, 16));
+    /* Background image for history panel */
+    background-size: cover;
+    /* Ensure the background covers the entire area */
+    background-position: center;
+}
+
+#history-panel h2 {
+    margin-bottom: 35px;
+}
+
+#history-list {
+    list-style: none;
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 0;
+}
+
+#history-list li {
+    padding: 15px;
+    background-color: #FD8B51;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#history-list li:hover {
+    background-color: #CB6040;
+}
+
+#main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #023a3f;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 120px;
+    height: 60px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#chat-container {
+    width: 70%;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.705);
+    display: flex;
+    flex-direction: column;
+    max-height: 600px;
+    /* Set maximum height for the chat container */
+}
+
+#chat-display {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-height: 100%;
+    /* Ensures it respects the container's height */
+}
+
+/* Updated style for messages */
+.message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    word-wrap: break-word;
+    /* Allows long words to break and wrap onto the next line */
+    max-width: 80%;
+    /* Limit the width of the messages for better readability */
+}
+
+.user {
+    background-color: #FD8B51;
+    color: white;
+    align-self: flex-end;
+    /* Align to the right */
+    margin-left: auto;
+    /* Push user messages to the right */
+}
+
+.bot {
+    background-color: #257180;
+    color: white;
+    align-self: flex-start;
+    /* Align to the left */
+    margin-right: auto;
+    /* Push bot messages to the left */
+}
+
+#input-area {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+#chat-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none;
+    /* Prevent resizing */
+}
+
+#send-btn {
+    background-color: #FD8B51;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#send-btn:hover {
+    background-color: #CB6040;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    background-color: #FD8B51;
+    color: white;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.custom-file-upload:hover {
+    background-color: #CB6040;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    padding: 5px;
+    background-color: #CB6040;
+    color: white;
+}
+
+.message img {
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+/* Chat messages styling */
+.message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+    /* Limit width for better readability */
+    word-wrap: break-word;
+    /* Break long words */
+}

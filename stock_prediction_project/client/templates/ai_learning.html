@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Financial Education</title>
+    <link rel="stylesheet" href="/static/css/ai_learning.css">
+</head>
+
+<body>
+    <div class="background"></div>
+    <div id="container">
+        <!-- Sidebar for conversation history -->
+        <aside id="history-panel">
+            <h2 align="center">Conversations</h2>
+            <ul id="history-list">
+                <!-- Historical chats will be dynamically added here -->
+            </ul>
+        </aside>
+
+        <!-- Main content for chatbot interaction -->
+        <div id="main-content">
+            <header>
+                <div class="logo">
+                    <img src="../static/assets/images/logo1-removebg-preview.png" alt="InvestoBot Logo">
+                </div>
+                <h1>InvestoBot - Your Learning Assistant</h1>
+            </header>
+
+            <main>
+                <div id="chat-container">
+                    <div id="chat-display"></div>
+                    <div id="input-area">
+                        <textarea rows="2" id="chat-input" placeholder="Ask InvestoBot anything about stocks..."></textarea>
+                        <label for="image-upload" class="custom-file-upload">
+                            <input type="file" id="image-upload" accept="image/*">
+                            Upload Image
+                        </label>
+                        <button id="send-btn">Send</button>
+                    </div>
+                </div>
+            </main>
+
+            <footer>
+                <p>All rights reserved.</p>
+            </footer>
+        </div>
+    </div>
+
+
+    <script src="/static/js/ai_learning.js"></script>"
+</body>
+
+</html>

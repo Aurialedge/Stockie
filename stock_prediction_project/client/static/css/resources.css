@@ -1,0 +1,94 @@
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('/static/assets/rescources_page_images/back.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+header {
+    background-color: rgb(18, 26, 28, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.slideshow-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.slideshow {
+    width: 45%;
+    position: relative;
+}
+
+.slideshow h2 {
+    text-align: center;
+    color: #257180;
+}
+
+.slideshow img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.slideshow img:hover {
+    transform: scale(1.05);
+}
+
+.slide-info {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.slide-info h3 {
+    color: #257180;
+    font-size: 1.5em;
+}
+
+.slide-info p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.slide-info a {
+    background-color: #FD8B51;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.slide-info a:hover {
+    background-color: #CB6040;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(37, 113, 128, 0.9);
+    color: white;
+    text-align: center;
+    padding: 0.5px 0;
+    /* margin-top: 10px; */
+    border-radius: 0 0 10px 10px;
+}

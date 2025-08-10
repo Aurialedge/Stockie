@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+header{
+
+    z-index: -10;
+    width: 100%;
+    height: 100vh;
+    background-color: #2b2f4b;
+    color: #fff;
+}
+header #particles{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Lower z-index */
+}
+
+
+.content-container {
+    position: relative;
+    z-index: 2; /* Higher z-index */
+}
+
+@keyframes pulse {
+    0%, 100%{
+        opacity: 0;
+    }
+    15%, 45%{
+        opacity: 1;
+    }
+    60%{
+        box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.1);
+        opacity: 0;
+    }
+}
+
+/* General reset and body styling */
+* {
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #FFFFFF; /* Text color for contrast */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3.5em; /* Larger heading */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Enhances visibility */
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+/* Main content styling */
+main {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center;
+    width: 100%; /* Full width of the viewport */
+}
+
+/* Content container for layout */
+.content-container {
+    display: flex; /* Horizontal layout for sidebar and main content */
+    width: 95%; /* Increased width of the main container */
+    max-width: 1200px; /* Max width for larger screens */
+}
+
+/* Left sidebar styling */
+.news-box {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background for contrast */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the sidebar */
+    margin-right: 20px; /* Space between sidebar and main content */
+    width: 300px; /* Fixed width for the sidebar */
+    flex-shrink: 0; /* Prevent the sidebar from shrinking */
+}
+
+.news-box h2 {
+    font-size: 1.8em; /* Font size for the sidebar heading */
+    margin-bottom: 25px; /* Space below the heading */
+    padding: 10px;
+}
+
+/* List styling for stock news */
+#stock-news-list {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    text-align: left; /* Align text to the left */
+    position: relative;
+    left: 30px;
+}
+
+#stock-news-list li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+#stock-news-list a {
+    color: #FD8B51; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+#stock-news-list a:hover {
+    color: #CB6040; /* Change color on hover */
+}
+
+/* Main content styling */
+.main-content {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background for contrast */
+    border-radius: 10px; /* Rounded corners */
+    padding: 40px; /* Increased padding */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7); /* More prominent shadow for depth */
+    flex-grow: 1; /* Allow main content to grow */
+    text-align: center; /* Center align text within main */
+}
+
+/* Form styling */
+form {
+    margin-bottom: 40px; /* Space between form and graph */
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 1.5em; /* Larger label text */
+}
+
+/* Input field styling */
+input[type="text"] {
+    padding: 15px; /* Increased padding */
+    border: 2px solid #CB6040; /* Input border color */
+    border-radius: 5px;
+    font-size: 1.2em; /* Larger input text */
+    width: 100%; /* Full width of the container */
+    max-width: 400px; /* Increased max width for input field */
+    margin-bottom: 20px; /* Space below the input field */
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for input */
+    color: #257180; /* Text color inside the input */
+}
+
+/* Button styling */
+button {
+    padding: 15px 30px; /* Larger button padding */
+    background-color: #257180; /* Button background color */
+    color: white; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em; /* Larger button text */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition effects */
+}
+
+button:hover {
+    background-color: #FD8B51; /* Button hover color */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Graph container styling */
+#graph {
+    margin-top: 20px;
+    height: 50vh; /* Increased responsive height */
+    width: 100%; /* Full width of the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #CB6040; /* Graph border color */
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+    padding: 20px; /* Add padding */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+}
+
+/* Widget container styling */
+.tradingview-widget-container {
+    width: 100%;
+    height: 100%;
+}
+
+.tradingview-widget-container__widget {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    background-color: #2b2f4b;
+    color: #fff;
+}
+
+header #particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Lower z-index */
+}
+
+.content-container {
+    position: relative;
+    z-index: 2; /* Higher z-index */
+}

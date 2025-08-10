@@ -1,0 +1,10 @@
+flask
+requests
+python-dotenv
+firebase-admin
+flask-login
+bcrypt
+email-validator
+gunicorn
+openai
+google.generativeai

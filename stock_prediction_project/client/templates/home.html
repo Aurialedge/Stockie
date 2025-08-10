@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- financial education -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/static/css/home.css">
+</head>
+
+<body>
+    <section class="header">
+        <div class="box">.</div>
+
+        <nav>
+            <a href="index.html"><img src="/static/assets/images/logo1-removebg-preview.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="/ai_learning">LEARN</a></li>
+                    <li><a href="/stock_rec">RECOMMENDATIONS</a></li>
+                    <li><a href="/stock_visualization">MARKET ACTIVITY</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <!-- <li><a href="">COURSE</a></li> -->
+                    <li><a href="/rescources">RESOURCES</a></li>
+                    <li><a href="" id="sign_out_button">SIGN-OUT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="dibba">
+            <h1>Explore Our Features</h1>
+            <p>Explore powerful tools and insights designed to enhance your stock market journey and help you<br> make
+                smarter investment decisions</p>
+        </div>
+        <div class="course">
+            <div class="row">
+                <button class="course-col btn" onclick="window.location.href='/ai_learning'">
+                    <h2>Learning</h2>
+                </button>
+                <button class="course-col btn" onclick="window.location.href='/stock_rec'">
+                    <h2>Recommendations</h2>
+                </button>
+                <button class="course-col btn" onclick="window.location.href='/stock_visualization'">
+                    <h2>Market Activity</h2>
+                </button>
+            </div>
+            <div class="description">
+                <p>
+                    Core concepts for stock investing and financial analysis. Learn and understand market dynamics
+                    with
+                    ease. We provide resources that guide you from the basics to advanced strategies, empowering you
+                    to
+                    make informed investment decisions
+                </p>
+                <p>
+                    Tailored to user goals and risk profiles.<br>Input your preferred stocks, and receive tailored
+                    suggestions on their current market position, helping you make informed choices aligned with
+                    your
+                    investment strategy.
+                </p>
+                <p>
+                    Data Visualizations: Display of financial metrics from selected companies. With highly
+                    interactive
+                    charts, users can track the growth and fluidity of a stock over the years, gaining deeper
+                    insights
+                    into market trends and stock performance.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="insights">
+        <h1 style="margin-top: 40px;">Latest STOCK Updates</h1>
+        <p style="color: rgb(54, 54, 54);">Stay informed with the latest stock updates to capitalize on market
+            opportunities and <br>navigate your
+            investment journey.</p>
+    </div>
+
+    <section class="news-insight">
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <div class="tradingview-widget-copyright"></div>
+            <script type="text/javascript">
+                document.addEventListener('DOMContentLoaded', function() {
+                    const widgetConfig = {
+                        "feedMode": "all_symbols",
+                        "isTransparent": true,
+                        "displayMode": "regular",
+                        "width": "1200",
+                        "height": "330",
+                        "colorTheme": "light",
+                        "locale": "en"
+                    };
+                    const script = document.createElement('script');
+                    script.type = 'text/javascript';
+                    script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-timeline.js';
+                    script.async = true;
+                    script.innerHTML = JSON.stringify(widgetConfig);
+                    document.querySelector('.news-insight .tradingview-widget-container__widget').appendChild(script);
+                });
+            </script>
+        </div>
+        <!-- TradingView Widget END -->
+    </section>
+
+    <section class="news-insight2">
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <div class="tradingview-widget-copyright"></div>
+            <script type="text/javascript">
+                document.addEventListener('DOMContentLoaded', function() {
+                    const widgetConfig = {
+                        "feedMode": "all_symbols",
+                        "isTransparent": true,
+                        "displayMode": "regular",
+                        "width": "280",
+                        "height": "400",
+                        "colorTheme": "light",
+                        "locale": "en"
+                    };
+                    const script = document.createElement('script');
+                    script.type = 'text/javascript';
+                    script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-timeline.js';
+                    script.async = true;
+                    script.innerHTML = JSON.stringify(widgetConfig);
+                    document.querySelector('.news-insight2 .tradingview-widget-container__widget').appendChild(script);
+                });
+            </script>
+        </div>
+        <!-- TradingView Widget END -->
+    </section>
+
+    <section class="footer">
+        <h3>About Us</h3>
+        <p>At InvestWise, we empower investors with real-time insights, expert guidance, and
+            cutting-edge
+            tools<br> to navigate the stock market confidently and achieve financial success</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+    </section>
+
+    <script src="/static/js/home.js"></script>
+</body>
+
+</html>

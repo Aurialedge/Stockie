@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+/* -------------------------------------------------------------------- */
+header {
+  width: 100%;
+  height: 100vh;
+  background-color: #2b2f4b;
+  color: #fff;
+}
+
+header #particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+
+/* -------------------------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* -------------------------------------------------------------------- */
+.chat-container {
+  z-index: 200;
+  margin-top: 10vh;
+  width: 80vw;
+  max-width: 1600;
+}
+
+.chatbox {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+}
+
+.p2 {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.tile-box {
+  background: black;
+  color: white;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 60px 30px;
+}
+
+.core-selects {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 10vh;
+  margin-left: 20px;
+}
+
+
+.coldiv {
+  margin-left: 20px;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -------------------------------------------------------------------- */
+.button-7 {
+  background-color: #0095ff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin: 0;
+  margin-top: 10vh;
+  margin-left: 40vw;
+  align-self: center;
+  outline: none;
+  padding: 8px .8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button-7:hover,
+.button-7:focus {
+  background-color: #07c;
+}
+
+.button-7:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.button-7:active {
+  background-color: #0064bd;
+  box-shadow: none;
+}
+
+/* ------------------------------------------------------------------ */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #fff;
+  overflow-x: hidden;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+
+.sec-center {
+  position: relative;
+  max-width: 100%;
+  text-align: center;
+  z-index: 200;
+}
+
+/* -------------------------------------------------- */
+
+select {
+  background-color: #1F99CD;
+  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20256%20448%22%20enable-background%3D%22new%200%200%20256%20448%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E.arrow%7Bfill%3A%23ffcc00%3B%7D%3C%2Fstyle%3E%3Cpath%20class%3D%22arrow%22%20d%3D%22M255.9%20168c0-4.2-1.6-7.9-4.8-11.2-3.2-3.2-6.9-4.8-11.2-4.8H16c-4.2%200-7.9%201.6-11.2%204.8S0%20163.8%200%20168c0%204.4%201.6%208.2%204.8%2011.4l112%20112c3.1%203.1%206.8%204.6%2011.2%204.6%204.4%200%208.2-1.5%2011.4-4.6l112-112c3-3.2%204.5-7%204.5-11.4z%22%2F%3E%3C%2Fsvg%3E%0A);
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  background-size: auto 50%;
+  border-radius: 5px;
+  border: none;
+  color: #ffffff;
+  padding: 10px 30px 10px 10px;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+@-moz-document url-prefix() {
+  select {
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 0 0 0 #ffffff;
+  }
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/lato/v24/S6u9w4BMUTPHh7USSwiPHA.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/lato/v24/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+}
+
+#experience,
+#timeHorizon,
+#incomeLevel,
+#investmentStrategy {
+  position: absolute;
+}
+
+#experience {
+  padding: 10px;
+  left: 20px;
+  top:-75px;
+}
+
+#timeHorizon {
+  padding: 10px;
+  left: -238px;
+  top: 90px;
+}
+
+#incomeLevel {
+  padding: 10px;
+  top: -75px;
+  left: -140px;
+}
+
+#investmentStrategy {
+  padding: 10px;
+  left: -400px;
+  top: 90px;
+}
+
+.factor {
+  margin-left: 20px;
+  position: relative;
+}
+
+button {
+  margin-left: 20px;
+  position: relative;
+}
+
+.chat-container {
+  margin-left: 20px;
+  position: relative;
+}
+
+#risk {
+  position: relative;
+  left: -40px;
+}
+
+#emoji {
+  position: relative;
+  left: 7px;
+  top: 8px;
+}
+
+.btnn {
+  position: relative;
+  top: -160px;
+  left: 130px;
+}
+
+.factor {
+  position: relative;
+  top: 0px;
+  left: -70px;
+}
+
+.chat-container {
+  position: relative;
+  top: 0px;
+  left: 110px;
+}

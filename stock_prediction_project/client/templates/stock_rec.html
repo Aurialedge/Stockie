@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Select</title>
+	<link rel='stylesheet' href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/unicons.css'>
+	<link rel="stylesheet" href="/static/css/stock_rec.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+
+</head>
+
+<body>
+	<header>
+		<div id="particles"></div>
+
+
+		<div class="tile-box">
+			<div class="core-selects">
+				<div class="sec-center">
+					<select id="experience">
+						<option>Select Investment Experience</option>
+						<option>Beginner (0-1 years)</option>
+						<option>Intermediate (1-3 years)</option>
+						<option>Advanced (3+ years)</option>
+					</select>
+				</div>
+				<div class="sec-center">
+					<select id="timeHorizon">
+						<option>Select Investment time horizon</option>
+						<option>Short-term (less than 1 year)</option>
+						<option>Medium-term (1-5 years)</option>
+						<option>Long-term (more than 5 years)</option>
+					</select>
+				</div>
+				<div class="sec-center">
+					<select id="incomeLevel">
+						<option>Select Income Level</option>
+						<option>Below 2,00,000</option>
+						<option>2,00,000 - 5,00,000</option>
+						<option>5,00,000 - 10,00,000</option>
+						<option>Above 10,00,000</option>
+					</select>
+				</div>
+				<div class="sec-center">
+					<select id="investmentStrategy">
+						<option>Select Investment Strategy</option>
+						<option>Growth-focused</option>
+						<option>Income-focused</option>
+						<option>Balanced (Growth + Income)</option>
+						<option>Value-focused</option>
+					</select>
+				</div>
+				<div class="sec-center factor" style="color: aqua;">
+					<p style="font-size: 2em;"><b id="risk">Risk Factor</b></p>
+					<div class="slider-container" style="font-size: 1.5em;">
+
+						<p style="display: inline; font-size: 2em;"><b>1</b></p>
+						<input type="range" id="emojiSlider" min="1" max="10" value="5"
+							style="display: inline; width: auto; vertical-align: middle; height: 2em;">
+						<p style="display: inline; font-size: 2em;"><b>10</b></p>
+						<span id="emoji" class="emoji" style="display: inline; font-size: 2em;">😐</span>
+					</div>
+				</div>
+			</div>
+
+			<div style="z-index: 200;">
+				<button class="button-7 btnn" role="button" onclick="getValues()" style="font-size: 2em;">Submit</button>
+
+			</div>
+
+		</div>
+		<div class="chat-container">
+			<div class="chatbox">
+				<p class="p2" id="chatParagraph"></p>
+			</div>
+		</div>
+		</div>
+	</header>
+	<script src="/static/js/stock_rec.js"></script>
+</body>
+
+</html>
