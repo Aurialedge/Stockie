@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>login</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/css/login.css" />
+
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img
+          src="/static/assets/images/logo1-removebg-preview.png"
+          alt="logo"
+        />
+        <!-- <p>Ai.Lab</p> -->
+      </div>
+      <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+    </nav>
+
+    <div class="login-box active">
+      <form>
+        <h3>Login Here</h3>
+        <label for="username_login">Username</label>
+        <input type="text" id="username_login" />
+        <label for="password_login">Password</label>
+        <input type="password" id="password_login" />
+        <button id="forgot-password" type="button">forgot password</button>
+        <br />
+        <!-- <button id="login">Log In</button> -->
+        <a href="#" id="login-button">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Login
+        </a>
+        <div id="signup-section">
+          <span>Not a user?</span>
+          <button id="signup" type="button">Sign Up</button>
+        </div>
+      </form>
+    </div>
+    <div class="signup-box">
+      <form>
+        <div id="login-section">
+          <img
+            id="back-arrow"
+            src="https://i.ibb.co/GFvPDGN/leftarrow-white.png"
+            alt="image"
+            height="40"
+            width="45"
+          />
+        </div>
+        <h3>Sign Up Here</h3>
+        <label for="username_signup">Username</label>
+        <input type="text" id="username_signup" />
+        <label for="email_signup">Email</label>
+        <input type="email" id="email_signup" />
+        <label for="password_signup">Password</label>
+        <input type="password" id="password_signup" />
+        <button id="signup-button">Sign Up</button>
+      </form>
+    </div>
+    <div class="signup-otp-box">
+      <form>
+        <h3>Enter OTP</h3>
+        <input type="text" id="signup-otp-input" maxlength="6"/>
+        <button id="otp-button">Submit</button>
+        
+        <span id="otp-text">otp sent to <span id="otp-email"></span></spam>
+        <br>
+        <a id="wrong-email">wrong email?</a>
+      </form>
+    </div>
+    <canvas />
+    <script src="https://unpkg.com/webgl-fluid@0.0.4/dist/webgl-fluid.umd.min.js"></script>
+    <script src="/static/js/login.js"></script>
+    <script>
+      window["webgl-fluid"].default(document.querySelector("canvas"));
+      //use below code if you want to use the settings from webglconfig.js
+      // window["webgl-fluid"].default(document.querySelector("canvas"), settings);
+    </script>
+  </body>
+</html>

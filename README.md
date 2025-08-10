@@ -1,3 +1,3 @@
-Website is hosted at https://iiitn.tech
-
-a empty .env file is attached
+# Stock Prediction Project
+This project predicts stock prices using ML models.  
+Updated UI and features from local machine + remote changes.
